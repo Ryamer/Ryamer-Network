@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ryamer Network Stats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://ryamer.com/favicon.ico">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Ryamer Network Stats</b></h1>
+  </header>
+
+  <div id="chart-timeline" class="chart-timeline"></div>
+
+
+  <script>
+    function renderChart() {
+      axios("https://network.ryamer.com/ipv6").then((res) => {
+        const data = res.data;
+        const final = [];
+        let average = 0;
+        for (const dataPoint of data) {
+          final.push([dataPoint.time, dataPoint.ipv6]);
+          average += dataPoint.ipv6;
+        }
+        const firstDay = final[0][0];
+        const lastDay = final[final.length - 1][0];
+        average = average / data.length;
+        let options = {
+          series: [{
+            name: "IPv6 Usage %",
+            data: final
+          }],
+          chart: {
+            id: 'area-datetime',
+            type: 'area',
+            height: 350,
+            zoom: {
+              enabled: true,
+              autoScaleYaxis: true
+            }
+          },
+          annotations: {
+            yaxis: [{
+              y: average,
+              borderColor: '#999',
+              label: {
+                show: true,
+                text: 'Average',
+                style: {
+                  color: "#fff",
+                  background: '#00E396'
+                }
+              }
+            }],
+            xaxis: []
+          },
+          dataLabels: {
+            enabled: false
+          },
+          markers: {
+            size: 0,
+            style: 'hollow',
+          },
+          xaxis: {
+            type: 'datetime',
+            min: new Date().getTime(),
+            tickAmount: 6,
+          },
+          tooltip: {
+            x: {
+              format: 'dd MMM yyyy'
+            }
+          },
+          fill: {
+            type: 'gradient',
+            gradient: {
+              shadeIntensity: 1,
+              opacityFrom: 0.7,
+              opacityTo: 0.9,
+              stops: [0, 100]
+            }
+          },
+          title: {
+            text: "IPv6 Usage",
+            align: 'center',
+          }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-timeline"), options);
+        chart.render();
+        chart.zoomX(new Date(firstDay).getTime(), new Date(lastDay).getTime());
+      })
+    }
+    renderChart();
+  </script>
+
+
+
+</body>
+
+</html>
