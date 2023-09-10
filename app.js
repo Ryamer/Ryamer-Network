@@ -53,7 +53,7 @@ startUp();
 
 const app = express();
   
-app.get("/ipv6", (req, res) => {
+app.get("/*", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.json(history);
 });

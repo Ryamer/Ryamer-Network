@@ -1,0 +1,10 @@
+network.ryamer.com {
+   handle_path /ipv6* {
+      reverse_proxy localhost:5002
+   }
+   handle {
+      root * /usr/share/caddy/networkui
+      try_files {path} /index.html
+      file_server browse
+   }
+}
