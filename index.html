@@ -2,26 +2,93 @@
 <html>
 
 <head>
-  <title>Ryamer Network Stats</title>
+  <title>Ryamer Network</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-  <link rel="icon" type="image/x-icon" href="https://ryamer.com/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.2/dist/axios.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://ryamer.com/logo.svg">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      padding-right: 5%;
+      padding-left: 5%;
+      padding-bottom: 5%;
+    }
+  </style>
 
 </head>
 
 <body>
 
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>Ryamer Network Stats</b></h1>
-  </header>
+  <div>
+    <header class="w3-container w3-center w3-white">
+      <h1 class="w3-xxxlarge"><b>Ryamer(AS400587) Network</b></h1>
+      <a href="https://ryamer.com">Main Site</a>
+      <a href="#stats">Stats</a>
+      <a href="#peering">Peering</a>
+    </header>
+  </div>
 
-  <div id="chart-timeline" class="chart-timeline"></div>
+
+
+  <div id="stats">
+    <h2 class="w3-container w3-center w3-padding-48 w3-white">Public Network Stats</h2>
+    <div id="chart-timeline" class="chart-timeline"></div>
+  </div>
+
+
+  <div id="peering">
+    <h2 class="w3-container w3-center w3-padding-48 w3-white">Peering With Ryamer</h2>
+    <p>We maintain an mostly open peering policy. If you want to peer with us, we will peer with you. To get started,
+      please send an email to <a href="mailto:peering@ryamer.com">peering@ryamer.com</a> and include your ASN, and where
+      you want to peer and how.</p>
+    <ul>
+      <li>Our ASN is 400587 and that is used everywhere.</li>
+      <li>We generally peer with route servers and prefer that you do too. Bilateral sessions are preferred with network
+        that we
+        exchange higher amounts of traffic with.</li>
+      <li>BGP MD5 is not required but can use it if necessary.</li>
+      <li>For private peering, we require a minimum of 10gbps connection and must be exchanging at least 500mbps of
+        traffic measured at the 95th% over a span of 1 week.</li>
+      <li>Please ensure that your peeringDB entry is up to date with accurate peering limits.</li>
+      <li>We don't peer with just IPV4. IPV6 peering is required. We will do just IPV6 peering.</li>
+      <li>Don't point a default route at us, and we don't point one towards you.</li>
+    </ul>
+
+    <h3>Current Peering Facilities</h3>
+    <h6>Direct Peering Datacenters</h6>
+    <ul>
+      <li>Hurricane Electric Fremont 2<ul>
+          <li>Minimum Connection Speed: 10G</li>
+          <li>Connection Type: Single Mode Fiber</li>
+        </ul>
+      </li>
+    </ul>
+    <h6>Internet Exchange Points</h6>
+    <ul>
+      <li><a href="https://fcix.net">Fremont Cabal Internet Exchange(FCIX)</a>
+        <ul>
+          <li>Connection Speed: 10gbps</li>
+          <li>Route Server Peer: Yes</li>
+          <li>IPV6: 2001:504:91::145</li>
+          <li>IPV4: 206.80.238.145</li>
+        </ul>
+      </li>
+      <li><a href="https://sfmix.org">San Francisco Metropolitan Internet Exchange(SFMIX)</a>
+        <ul>
+          <li>Connection Speed: 1gbps</li>
+          <li>Route Server Peer: Yes</li>
+          <li>IPV6: 2001:504:30::ba40:587:1</li>
+          <li>IPV4: 206.197.187.112</li>
+        </ul>
+      </li>
+      </li>
+    </ul>
+  </div>
+
+
 
 
   <script>
