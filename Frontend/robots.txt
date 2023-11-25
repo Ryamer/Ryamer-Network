@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://network.ryamer.com/sitemap.xml
