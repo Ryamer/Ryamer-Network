@@ -1,0 +1,10 @@
+{
+    "web" : {
+        "port" : 5002
+    },
+    "statsCollector" :{
+        "akvoradoAPIBaseURL" : "https://akvorado.example.com/api",
+        "statsDataPoints" : 4032,
+        "dataCollectionTimeMS" : 600000
+    }
+}

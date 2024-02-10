@@ -1,4 +1,5 @@
 const axios = require("axios");
+const config = require("./config.json");
 const express = require('express');
 const fs = require("fs");
 
@@ -7,7 +8,7 @@ const fs = require("fs");
 let history = [];
 
 async function getAndSaveData() {
-  axios("https://akvorado.ryamer.com/api/v0/console/widget/top/etype?0").then((res) => {
+  axios(config.statsCollector.akvoradoAPIBaseURL + "/v0/console/widget/top/etype?0").then((res) => {
     const data = res.data;
     let IPv6Percent = 0;
     let IPv4Percent = 0;
@@ -33,7 +34,7 @@ function readHistory() {
 }
 
 function writeHistory() {
-  history = history.slice(-4032)
+  history = history.slice(-1 * config.statsCollector.statsDataPoints);
   fs.writeFileSync("./history.json", JSON.stringify(history));
   return true;
 }
@@ -43,7 +44,7 @@ async function startUp() {
   getAndSaveData();
   setInterval(() => {
     getAndSaveData();
-  }, 1000 * 60 * 10);
+  }, config.statsCollector.dataCollectionTimeMS);
 }
 
 startUp();
@@ -59,8 +60,8 @@ app.get("/*", (req, res) => {
   res.json(history);
 });
 
-app.listen(5002, () => {
-
+app.listen(config.web.port, () => {
+  console.log("Listening on ", config.web.port)
 });
 
 // END WEB SERVER
