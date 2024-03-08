@@ -7,11 +7,11 @@ on:
     branches: ['**']
 
 jobs:
-  build:
+    build:
+        defaults:
+          run:
+            working-directory: UI
     runs-on: ubuntu-latest
-    defaults:
-        run:
-          working-directory: ./UI
     steps:
     - name: Checkout Repo
       uses: actions/checkout@v3
@@ -28,7 +28,7 @@ jobs:
       uses: burnett01/rsync-deployments@7.0.0
       with:
         switches: -avzr --delete
-        path: src/
+        path: build/
         remote_path: ${{ secrets.DEPLOY_PATH }}
         remote_host: ${{ secrets.DEPLOY_HOST }}
         remote_user: ${{ secrets.DEPLOY_USER }}
