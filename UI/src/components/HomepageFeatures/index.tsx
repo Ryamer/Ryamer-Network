@@ -19,8 +19,9 @@ const FeatureList: FeatureItem[] = [
     Svg: BiStats,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Want to see how our network is doing? Interested in graphs or chats?
+        Well you are in luck as we've made some statistics about our network public 
+        and you can check them out!
       </>
     ),
     to: "/stats"
@@ -30,8 +31,8 @@ const FeatureList: FeatureItem[] = [
     Svg: PiPlugsConnectedLight,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Want to lower your cost and improve your connectivity? Peer with us to do that!
+        Check for some mutual IX or if we share enough traffic, we can even do PNI!
       </>
     ),
     to: "/peering"
@@ -41,8 +42,9 @@ const FeatureList: FeatureItem[] = [
     Svg: MdOutlineArticle,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Our network engineers are great at writing configurations for routers and switches. But
+        did you know that they can write blog posts that you want to read too? Check them out, maybe
+        you'll find something interesting.
       </>
     ),
     to : "/blog"
