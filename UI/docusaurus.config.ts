@@ -45,6 +45,7 @@ const config: Config = {
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Ryamer Network',
@@ -53,7 +54,7 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/docs/peering', label: 'Peering', position: 'left'},
+        {to: '/peering', label: 'Peering', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -76,7 +77,7 @@ const config: Config = {
           items: [
             {
               label: 'Docs',
-              to: '/docs/intro',
+              to: 'docs/Peering/Policy',
             },
           ],
         },
