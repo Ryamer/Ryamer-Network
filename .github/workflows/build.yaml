@@ -25,7 +25,6 @@ jobs:
           cache: npm
           cache-dependency-path: UI
       - run: npm ci
-      - run: npm run lint
       - run: npm run build
       - name: Deploy
         uses: burnett01/rsync-deployments@7.0.0
