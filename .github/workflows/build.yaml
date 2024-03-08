@@ -6,14 +6,12 @@ on:
   pull_request:
     branches: ['**']
 
-defaults:
-    run:
-        working-directory: UI
-
 jobs:
   build:
     runs-on: ubuntu-latest
-      
+    defaults:
+        run:
+          working-directory: ./UI
     steps:
     - name: Checkout Repo
       uses: actions/checkout@v3
