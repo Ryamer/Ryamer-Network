@@ -38,7 +38,7 @@ export default function stats(): JSX.Element {
 
     return (
         <Layout
-            title={`Ryamer Stats`}
+            title={`Network Stats`}
             description="See some of our public network stats">
             <ThemeProvider theme={darkTheme}>
                 <main>
