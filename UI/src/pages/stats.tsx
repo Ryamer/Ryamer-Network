@@ -3,7 +3,8 @@ import axios from 'axios';
 import { LineChart } from '@mui/x-charts/LineChart';
 import { useEffect, useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { Typography } from '@mui/material';
+import Link from '@docusaurus/Link';
 
 const darkTheme = createTheme({
     palette: {
@@ -27,8 +28,6 @@ export default function stats(): JSX.Element {
                 final.push([dataPoint.time, dataPoint.ipv6]);
                 average += dataPoint.ipv6;
             }
-            const firstDay = final[0][0];
-            const lastDay = final[final.length - 1][0];
             average = average / data.length;
             const xAxis = final.map((item) => new Date(item[0]))
             const yAxis = final.map((item) => item[1])
@@ -42,7 +41,6 @@ export default function stats(): JSX.Element {
             title={`Ryamer Stats`}
             description="See some of our public network stats">
             <ThemeProvider theme={darkTheme}>
-                <CssBaseline />
                 <main>
                     <LineChart
                         height={300}
@@ -53,8 +51,10 @@ export default function stats(): JSX.Element {
                             '.MuiLineElement-root': {
                                 display: 'none',
                             },
+                            marginTop: "50px"
                         }}
                     />
+                    <Typography>Data is collected every 10 minutes and stored for approximately one months. We grab the data from our <Link to="https://github.com/akvorado/akvorado">akvorado</Link> instance that's connected to our core router.</Typography>
                 </main>
             </ThemeProvider>
         </Layout>
