@@ -4,7 +4,8 @@ network.ryamer.com {
    }
    handle {
       root * /usr/share/caddy/networkui
+      encode gzip
       try_files {path} /index.html
-      file_server browse
+      file_server
    }
 }
