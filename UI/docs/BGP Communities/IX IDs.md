@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Internet Exchange IDs
 
-#### Our Internet Exchange IDs
+#### Our Internet Exchanges
 
 | Internet Exchange ID | Internet Exchange Name |
 |----------------------|------------------------|
