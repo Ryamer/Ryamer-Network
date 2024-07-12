@@ -12,6 +12,12 @@ sidebar_position: 2
 * IPV6: 2001:504:91::145
 * IPV4: 206.80.238.145
 
+###### [FREMONT INTERNET EXCHANGE(FREMIX)](https://fremix.exchange/)
+* Connection Speed: 10gbps
+* Route Server Peer: Yes
+* IPV6: 2001:504:125:e0::81
+* IPV4: 149.112.29.81
+
 ###### [San Francisco Metropolitan Internet Exchange(SFMIX)](https://sfmix.org)
 * Connection Speed: 1gbps
 * Route Server Peer: Yes
