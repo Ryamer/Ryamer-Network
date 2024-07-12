@@ -31,15 +31,14 @@ These communities control how we export routes at Internet Exchanges:
 | 400587 | 2003 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend three times to IX |
 
 
-
 ###### Per Site
 These communities control how we export routes at out sites:
 
-|        |      |                                           | Description               |
-|--------|------|-------------------------------------------|---------------------------|
+|        |      |                                               | Description                 |
+|--------|------|-----------------------------------------------|-----------------------------|
 | 400587 | 3000 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Do not advertise at site    |
-| 400587 | 3001 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend once at site       |
-| 400587 | 3002 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend twice tat site    |
+| 400587 | 3001 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend once at site        |
+| 400587 | 3002 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend twice tat site      |
 | 400587 | 3003 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend three times at site |
 
 ###### Global
