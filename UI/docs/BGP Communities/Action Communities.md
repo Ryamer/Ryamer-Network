@@ -38,8 +38,22 @@ These communities control how we export routes at out sites:
 |--------|------|-----------------------------------------------|-----------------------------|
 | 400587 | 3000 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Do not advertise at site    |
 | 400587 | 3001 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend once at site        |
-| 400587 | 3002 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend twice tat site      |
+| 400587 | 3002 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend twice at site      |
 | 400587 | 3003 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend three times at site |
+
+
+###### Local Preference
+These communities control how we setup local preference. You can view our default local preference [here](/docs/BGP%20Communities/Peer%20Types).
+
+|        |      |     | Local Pref | Description                     |
+|--------|------|-----|------------|---------------------------------|
+| 400587 | 4000 | 50  | 50         | Lower than transit              |
+| 400587 | 4000 | 80  | 80         | Lower than IX Route Server Peer |
+| 400587 | 4000 | 140 | 140        | Lower Than IX Public Peer       |
+| 400587 | 4000 | 160 | 160        | Lower Than Public Peer          |
+| 400587 | 4000 | 210 | 210        | Higher than customer            |
+
+
 
 ###### Global
 These communities control how we export routes everywhere:
