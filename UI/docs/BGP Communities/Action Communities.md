@@ -15,20 +15,20 @@ These communities control how we export routes to other ASNs:
 |        |      |          | Description                     |
 |--------|------|----------|---------------------------------|
 | 400587 | 1000 | Peer ASN | Do not advertise to Peer ASN    |
-| 400587 | 1001 | Peer ASN | Prepend once to peer asn        |
-| 400587 | 1002 | Peer ASN | Prepend twice to peer asn       |
-| 400587 | 1003 | Peer ASN | Prepend three times to peer asn |
+| 400587 | 1001 | Peer ASN | Prepend once to peer ASN        |
+| 400587 | 1002 | Peer ASN | Prepend twice to peer ASN       |
+| 400587 | 1003 | Peer ASN | Prepend three times to peer ASN |
 
 
 ###### Per Internet Exchange
 These communities control how we export routes at Internet Exchanges:
 
-|        |      |                                           | Description               |
-|--------|------|-------------------------------------------|---------------------------|
-| 400587 | 2000 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Do not advertise to IX    |
-| 400587 | 2001 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend once to IX        |
-| 400587 | 2002 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend twice to IX       |
-| 400587 | 2003 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend three times to IX |
+|        |      |                                           | Description                  |
+|--------|------|-------------------------------------------|------------------------------|
+| 400587 | 2000 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Do not advertise to IX RS    |
+| 400587 | 2001 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend once to IX RS        |
+| 400587 | 2002 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend twice to IX RS       |
+| 400587 | 2003 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend three times to IX RS |
 
 
 ###### Per Site
@@ -38,7 +38,7 @@ These communities control how we export routes at out sites:
 |--------|------|-----------------------------------------------|-----------------------------|
 | 400587 | 3000 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Do not advertise at site    |
 | 400587 | 3001 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend once at site        |
-| 400587 | 3002 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend twice at site      |
+| 400587 | 3002 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend twice at site       |
 | 400587 | 3003 | [Site ID](/docs/BGP%20Communities/Site%20IDs) | Prepend three times at site |
 
 
