@@ -24,6 +24,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+  scripts : [{src: 'https://a.dbuidl.com/js/script.js', defer: true, 'data-domain': 'network.ryamer.com'}],
+  
   presets: [
     [
       'classic',
