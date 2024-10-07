@@ -1,0 +1,30 @@
+---
+slug: please-adopt-ipv6
+title: Please Adopt IPv6
+authors: [rishi556]
+tags: [ipv6, networking]
+---
+
+Please, we are begging you. Adopt IPv6 and help everyone lower costs. CGNAT servers, NAT64 servers, regular NAT on a home router, IPv4 address space exhaustion. There's just so much going on with IPv4 where adding dual stacked IPv6 would help reduce cost.
+
+Looking at our NAT64 server(we are not a residential ISP and so don't have CGNAT, nor do we use NAT much internally other than a few places(like our internal VPN)) we can see that we do see some traffic flowing through that.
+It's not too much, since we don't sell virtual servers directly, and the clients buying VMs are going through another seller who does use the NAT64 server as well, but we do make use of it internally. A lot of our internal stuff runs on IPv6 only machines to save us on an IPv4 address.
+For us, one of the biggest issue is Github not support IPv6, and so all that traffic has to go through the NAT64 server. We've only got a 1G link between the server and our switch. Thankfully traffic on that server isn't too high or else we'd need to look into upgrading it quicker, but every once in a while it gets to a point that makes us think if we should upgrade to a 10G link.
+But a 10G link would have costs associated with it. We don't purely run NAT64 on the server, it's running more stuff as well, and taking it down to install a 10G adapter, and bring it back up will have some downtime associated with it, plus the hardware cost and labor cost.
+
+Github is one of the services that we utilize which still doesn't support IPv6 and has us considering alternatives. In fact, as of writing this post, [github still doesn't support cloning repositories over IPv6](https://github.com/orgs/community/discussions/10539).
+It causes thoughts like should we switch the git platform that we are on in order to reduce our costs and reduce the amount of git cloning traffic that goes on via the NAT64 server?
+
+IPv4 exhaustion is another big issue. The RIRs are out of IPv4 addresses to give away and we have to resort to either getting on the waiting list(which is a multi year process) or buy the IP space, which can cost about $10k per /24 of IPv4(which is only 256 addresses).
+There's a reason that AWS and other providers(including us) are raising the cost for IPv4 addresses and it's because it's not cheap to acquire them.
+
+### Good news
+
+The good news is that we are seeing signs towards progress here. Last month, [BackBlaze announced support for IPv6](https://www.backblaze.com/blog/announcing-support-for-ipv6/) for their S3 compatible object storage api. That's a service that we do make use of, and can see less traffic flow through our NAT64 server.
+Github does seem like they are making progress towards it as well, just not quick enough. AWS is announcing more and more support for IPv6 in their products. 
+
+### What can you do?
+
+You can help out in this too! Anytime you see IPv6 missing on an ISP connection, or a service you use or website you visit, ask them if they have plans to support IPv6 anytime soon. Show that there is desire for IPv6 from users out there.
+Financially support services that support IPv6 over those who don't. For us, that might mean moving from Github to Gitlab, and while the change over might take a little bit of getting used to(I personally use both platforms, and always takes me a second to figure out where the buttons are again when context switching), in the long run, it's going to show the need for IPv6 to retain and get new customers.
+Give the issue on github/gitlab/hosting platform for IPv6 a thumbs up to show that you want support for it.
