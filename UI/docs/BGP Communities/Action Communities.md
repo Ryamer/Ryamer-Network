@@ -32,7 +32,7 @@ These communities control how we export routes at Internet Exchanges:
 
 
 ###### Per Site
-These communities control how we export routes at out sites:
+These communities control how we export routes at our sites:
 
 |        |      |                                               | Description                 |
 |--------|------|-----------------------------------------------|-----------------------------|
