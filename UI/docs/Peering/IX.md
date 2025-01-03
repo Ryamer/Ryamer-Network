@@ -33,8 +33,8 @@ sidebar_position: 2
 
 
 
-###### [SONIX STOCKHOLM](https://sonix.network/)
+###### [Sweden Open Network Internet Exchange(SONIX) Stockholm](https://sonix.network/)
 * Connection Speed: 100gbps
 * Route Server Peer: Yes
-* IPV6: 
-* IPV4: 
+* IPV6: 2001:7f8:117::400:587:1
+* IPV4: 185.1.215.58
