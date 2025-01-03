@@ -30,9 +30,6 @@ sidebar_position: 2
 * IPV6: 2606:a980:0:d::a
 * IPV4: 206.53.206.10
 
-
-
-
 ###### [Sweden Open Network Internet Exchange(SONIX) Stockholm](https://sonix.network/)
 * Connection Speed: 100gbps
 * Route Server Peer: Yes
