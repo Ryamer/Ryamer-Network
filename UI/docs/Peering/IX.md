@@ -24,6 +24,12 @@ sidebar_position: 2
 * IPV6: 2001:504:30::ba40:587:1
 * IPV4: 206.197.187.112
 
+###### [MEGA-IX Bay Area](https://www.megaport.com/solutions/mega-ix/)
+* Connection Speed: 10gbps
+* Route Server Peer: Yes
+* IPV6: 2606:a980:0:e::15
+* IPV4: 206.53.206.149
+
 ###### [MEGA-IX Chicago](https://www.megaport.com/solutions/mega-ix/)
 * Connection Speed: 10gbps
 * Route Server Peer: Yes

@@ -12,4 +12,5 @@ sidebar_position: 4
 | 17297                | FCIX                   |
 | 3685                 | FREMIX                 |
 | 4507                 | MEGA-IX Chicago        |
-| 3607                 | SONIX STOCKHOLM        |
+| 3607                 | SONIX Stockholm        |
+| 29589                | MEGA-IX Bay Area       |
