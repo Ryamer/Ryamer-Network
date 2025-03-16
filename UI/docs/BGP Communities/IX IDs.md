@@ -8,9 +8,9 @@ sidebar_position: 4
 
 | Internet Exchange ID | Internet Exchange Name |
 |----------------------|------------------------|
-| 8123                 | SFMIX                  |
-| 17297                | FCIX                   |
+| 155                  | SFMIX                  |
+| 2163                 | FCIX                   |
 | 3685                 | FREMIX                 |
 | 4507                 | MEGA-IX Chicago        |
 | 3607                 | SONIX Stockholm        |
-| 29589                | MEGA-IX Bay Area       |
+| 4508                 | MEGA-IX Bay Area       |
