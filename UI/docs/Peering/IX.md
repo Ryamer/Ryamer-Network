@@ -52,8 +52,8 @@ sidebar_position: 2
 ###### [ERA-IX Amsterdam](https://www.era-ix.com/amsterdam)
 * Connection Speed: 10gbps
 * Route Server Peer: Yes
-* IPV6: 
-* IPV4: 
+* IPV6: 2001:7f8:12a::150
+* IPV4: 185.1.240.150
 
 
 ###### [Speed-IX](https://speed-ix.net)
