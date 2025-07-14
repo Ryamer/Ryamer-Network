@@ -21,14 +21,8 @@ These communities control how we export routes to other ASNs:
 
 
 ###### Per Internet Exchange
-These communities control how we export routes at Internet Exchanges:
 
-|        |      |                                           | Description                  |
-|--------|------|-------------------------------------------|------------------------------|
-| 400587 | 2000 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Do not advertise to IX RS    |
-| 400587 | 2001 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend once to IX RS        |
-| 400587 | 2002 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend twice to IX RS       |
-| 400587 | 2003 | [IX ID](/docs/BGP%20Communities/IX%20IDs) | Prepend three times to IX RS |
+Please use the Per ASN with the [Peer ASN](/docs/BGP%20Communities/IX%20IDs) being the IX's route server ASN to control advertisements towards IX RS.
 
 
 ###### Per Site
