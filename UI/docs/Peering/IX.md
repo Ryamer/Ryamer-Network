@@ -41,7 +41,6 @@ sidebar_position: 2
 * IPV6: 2001:7f8:134::6e
 * IPV4: 185.0.1.138
 
-
 ###### [ERA-IX Amsterdam](https://www.era-ix.com/amsterdam)
 * Connection Speed: 10gbps
 * IPV6: 2001:7f8:12a::150
