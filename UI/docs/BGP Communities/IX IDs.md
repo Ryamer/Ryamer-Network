@@ -14,3 +14,5 @@ sidebar_position: 4
 | 4507                 | MEGA-IX Chicago        | 64214            |
 | 3607                 | SONIX Stockholm        | 61229            |
 | 4508                 | MEGA-IX Bay Area       | 64215            |
+| 3990                 | Inter-IX               | 56584            |
+| 3789                 | ERA-IX Amsterdam       | 206221           |

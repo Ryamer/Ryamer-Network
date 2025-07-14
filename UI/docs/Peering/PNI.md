@@ -11,7 +11,6 @@ sidebar_position: 2
 * Connection Type: Single Mode Fiber
 * 48233 Warm Springs Blvd Fremont, CA, 94539, USA
 
-
 ###### [Netrality Chicago](https://www.peeringdb.com/fac/3398)
 * Minimum Connection Speed: 10G
 * Connection Type: Single Mode Fiber
@@ -21,3 +20,8 @@ sidebar_position: 2
 * Minimum Connection Speed: 10G
 * Connection Type: Single Mode Fiber
 * Torshamnsgatan 48 Kista, Stockholm, 164 40, Sweden
+
+###### [Nikhef Amsterdam](https://www.peeringdb.com/fac/18)
+* Minimum Connection Speed: 10G
+* Connection Type: Single Mode Fiber
+* TScience Park 105,  Amsterdam, NH, 1098 XG , Netherlands
