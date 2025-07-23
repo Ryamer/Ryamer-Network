@@ -24,4 +24,4 @@ sidebar_position: 2
 ###### [Nikhef Amsterdam](https://www.peeringdb.com/fac/18)
 * Minimum Connection Speed: 10G
 * Connection Type: Single Mode Fiber
-* TScience Park 105,  Amsterdam, NH, 1098 XG , Netherlands
+* Science Park 105,  Amsterdam, NH, 1098 XG , Netherlands
