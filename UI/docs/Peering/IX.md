@@ -45,3 +45,9 @@ sidebar_position: 2
 * Connection Speed: 10gbps
 * IPV6: 2001:7f8:12a::150
 * IPV4: 185.1.240.150
+
+
+###### [NYIIX NYC](https://www.nyiix.net/locations/nyiix-new-york/)
+* Connection Speed: 10gbps
+* IPV6: ?
+* IPV4: ?
