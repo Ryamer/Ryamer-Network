@@ -12,7 +12,7 @@ We maintain an mostly open peering policy. If you want to peer with us, we will 
 
 * BGP MD5 is not required but can use it if necessary.
 
-* For private peering, we require a minimum of 10gbps connection and must be exchanging at least 500mbps of traffic measured at the 95th% over a span of 1 week.
+* For private peering, we require a minimum of 10gbps connection and must be exchanging at least 500mbps of traffic measured at the 95th% over a span of 1 week. You are responsible for the costs associated with the PNI, unless prior agreed to shared the cost.
 
 * Please ensure that your peeringDB entry is up to date with accurate peering limits.
 
