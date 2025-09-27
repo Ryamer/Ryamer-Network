@@ -81,15 +81,6 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Docs',
-              to: 'docs/Peering/Policy',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
