@@ -70,6 +70,7 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {href: 'https://lg.ryamer.net', label: 'Looking Glass', position: 'right'},
         {
           href: 'https://github.com/Ryamer/Ryamer-Network/tree/main/UI',
           label: 'GitHub',
