@@ -26,11 +26,6 @@ sidebar_position: 1
 * IPV6: 2606:a980:0:e::15
 * IPV4: 206.53.206.149
 
-###### [MEGA-IX Chicago](https://www.megaport.com/solutions/mega-ix/)
-* Connection Speed: 10gbps
-* IPV6: 2606:a980:0:d::a
-* IPV4: 206.53.206.10
-
 ###### [Sweden Open Network Internet Exchange(SONIX) Stockholm](https://sonix.network/)
 * Connection Speed: 100gbps
 * IPV6: 2001:7f8:117::400:587:1

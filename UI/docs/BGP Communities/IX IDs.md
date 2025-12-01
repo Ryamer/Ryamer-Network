@@ -11,7 +11,6 @@ sidebar_position: 4
 | 155                  | SFMIX                  | 63055            |
 | 2163                 | FCIX                   | 33495            |
 | 3685                 | FREMIX                 | 57369            |
-| 4507                 | MEGA-IX Chicago        | 64214            |
 | 3607                 | SONIX Stockholm        | 61229            |
 | 4508                 | MEGA-IX Bay Area       | 64215            |
 | 3990                 | Inter-IX               | 56584            |
