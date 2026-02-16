@@ -46,3 +46,8 @@ sidebar_position: 1
 * Connection Speed: 10gbps
 * IPV6: 2001:504:1::a540:587:1
 * IPV4: 198.32.160.146
+
+###### [FogIXP](https://fogixp.org/)
+* Connection Speed: 10gbps
+* IPV6: 2001:7f8:ca:1:0:40:587:1
+* IPV4: 185.1.147.100

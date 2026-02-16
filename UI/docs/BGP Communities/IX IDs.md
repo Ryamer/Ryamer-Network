@@ -16,3 +16,4 @@ sidebar_position: 4
 | 3990                 | Inter-IX               | 56584            |
 | 3789                 | ERA-IX Amsterdam       | 206221           |
 | 14                   | NYIIX NYC              | 13538            |
+| 3756                 | FOGIXP                 | 47498            |
