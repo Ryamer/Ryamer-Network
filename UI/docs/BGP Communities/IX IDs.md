@@ -17,4 +17,6 @@ sidebar_position: 4
 | 3789                 | ERA-IX Amsterdam       | 206221           |
 | 14                   | NYIIX NYC              | 13538            |
 | 3756                 | FOGIXP                 | 47498            |
+| 4837                 | FOGIXP Amsterdam       | 61190            |
 | 1842                 | SpeedIX                | 41441            |
+| 4705                 | NINEIX                 | 31561            |

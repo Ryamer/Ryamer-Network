@@ -34,7 +34,7 @@ sidebar_position: 1
 ###### [Inter-IX](https://www.inter-ix.net/en)
 * Connection Speed: 10gbps
 * IPV6: 2001:7f8:134::6e
-* IPV4: 185.0.1.138
+* IPV4: 185.1.184.138
 
 ###### [ERA-IX Amsterdam](https://www.era-ix.com/amsterdam)
 * Connection Speed: 10gbps
@@ -51,7 +51,22 @@ sidebar_position: 1
 * IPV6: 2001:7f8:ca:1:0:40:587:1
 * IPV4: 185.1.147.100
 
+###### [FogIXP Amsterdam](https://fogixp.org/)
+* Connection Speed: 10gbps
+* IPV6: 2001:7f8:16c:1:0:40:587:1
+* IPV4: 194.153.153.77
+
 ###### [SpeedIX](https://speed-ix.net/)
 * Connection Speed: 10gbps
 * IPV6: 2001:7f8:b7::a540:587:1
 * IPV4: 185.1.223.79
+
+###### [SpeedIX](https://speed-ix.net/)
+* Connection Speed: 10gbps
+* IPV6: 2001:7f8:b7::a540:587:1
+* IPV4: 185.1.223.79
+
+###### [NineIX](https://nine-ix.net/)
+* Connection Speed: 10gbps
+* IPV6: 2001:7f8:12e::40:587:1
+* IPV4: 185.1.14.178
