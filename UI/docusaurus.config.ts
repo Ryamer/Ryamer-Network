@@ -101,6 +101,10 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/Ryamer',
             },
+            {
+              label: 'Looking Glass',
+              href: 'https://lg.ryamer.net',
+            },
           ],
         },
       ],
