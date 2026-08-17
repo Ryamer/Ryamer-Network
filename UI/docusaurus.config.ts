@@ -105,6 +105,10 @@ const config: Config = {
               label: 'Looking Glass',
               href: 'https://lg.ryamer.net',
             },
+            {
+              label: 'PeeringDB',
+              href: 'https://www.peeringdb.com/net/29589',
+            },
           ],
         },
       ],
