@@ -4,7 +4,6 @@ import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import { MdOutlineArticle } from "react-icons/md";
 import { PiPlugsConnectedLight } from "react-icons/pi";
-import { BiStats } from "react-icons/bi";
 
 type FeatureItem = {
   title: string;
@@ -14,18 +13,6 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
-  {
-    title: 'Check Out Some Public Stats',
-    Svg: BiStats,
-    description: (
-      <>
-        Want to see how our network is doing? Interested in graphs or chats?
-        Well you are in luck as we've made some statistics about our network public 
-        and you can check them out!
-      </>
-    ),
-    to: "/stats"
-  },
   {
     title: 'Peer With Us',
     Svg: PiPlugsConnectedLight,
